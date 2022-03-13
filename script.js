@@ -166,10 +166,6 @@ function checkValues(){
             superJumbo.style.visibility = "visible";
             superJumboText.style.visibility = "visible";
             superJumboLink.setAttribute("href", "https://www.amazon.com/Alfapet-Disposable-Liners-5-Pack-Extra-Giant-Super-Jumbo/dp/B0898MMYXJ/ref=sr_1_18?dchild=1&keywords=alfapet+cat+pan+liners&qid=1609792159&sr=8-18");
-        } else if (x > 42 || y > 40.5){
-            resetValues();
-            output.innerHTML = "One of your sizes are too large for our liners."
-            output.style.color = "black";
         } else if (length > 27){
             output.innerHTML = "Your length is too large for any for our liners."
             output.style.color = "black";
@@ -188,7 +184,10 @@ function checkValues(){
         } else if (right > 12){
             output.innerHTML = "Your right side is too large for any for our liners."
             output.style.color = "black";
-        }
+        } else if (x > 42 || y > 40.5){
+            output.innerHTML = "One of your sizes are too large for our liners."
+            output.style.color = "black";
+	}
     }
 }
 
