@@ -101,7 +101,7 @@ function checkValues(){
             output.innerHTML = "Atleast one of your sides are too small for our liners.";
             output.style.color = "black";
         }   else if (x <= 31 && y <= 34){
-            output.innerHTML = "The correct size is Large.<br> Click on the pictures below to be taken to our Amazon store page!";
+            output.innerHTML = "The correct size is Large.<br> Click on the picture below to be taken to our Amazon store page!";
             output.style.color = "rgb(95, 63, 63)";
             large.style.visibility = "visible";
             largeText.style.visibility = "visible";
@@ -146,7 +146,7 @@ function checkValues(){
             superJumboText.style.visibility = "hidden";
             superJumboLink.removeAttribute("href");
         } else if (x <= 42 && y <= 40.5){
-            output.innerHTML = "The correct size is Super Jumbo.<br> Click on the pictures below to be taken to our Amazon store page!";
+            output.innerHTML = "The correct size is Super Jumbo.<br> Click on the picture below to be taken to our Amazon store page!";
             output.style.color = "darkgreen";
             large.style.visibility = "hidden";
             largeText.style.visibility = "hidden";
