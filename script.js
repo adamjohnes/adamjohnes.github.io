@@ -4,7 +4,8 @@
 document.getElementById("myBtn").onclick = checkValues;
 document.getElementById("reset").onclick = resetValues;
 
-function checkValues(){
+function checkValues()
+{
 
     length = +document.getElementById("length").value;
     width = +document.getElementById("width").value;
@@ -38,24 +39,38 @@ function checkValues(){
     superJumboLink = document.getElementById("superJumboLink");
     superJumboText = document.getElementById("superJumboText");
 
-    if (length < 0 || length == 0 || isNaN(length) || width < 0 || width == 0 || isNaN(width) || front < 0 || front == 0 || isNaN(front) || left < 0 || left == 0 || isNaN(left) || back < 0 || back == 0 || isNaN(back) || right < 0 || right == 0 || isNaN(right)){
-        if (length < 0 || isNaN(length)){
+    if (length < 0 || length == 0 || isNaN(length) || width < 0 || width == 0 || isNaN(width) || front < 0 || front == 0 || isNaN(front) || left < 0 || left == 0 || isNaN(left) || back < 0 || back == 0 || isNaN(back) || right < 0 || right == 0 || isNaN(right))
+    {
+        if (length < 0 || isNaN(length))
+        {
             lengthError.innerHTML = "Enter a positive number.";
             output.innerHTML = "";
-        } else if (length == 0){
+        }
+        else if (length == 0)
+        {
             lengthError.innerHTML = "Must be larger than zero.";
             output.innerHTML = "";
-        } else{
+        } 
+        else
+        {
             lengthError.innerHTML = "";
-        } if (width < 0 || isNaN(width)){
+        } 
+        if (width < 0 || isNaN(width))
+        {
             widthError.innerHTML = "Enter a positive number.";
             output.innerHTML = "";
-        } else if (width == 0){
+        } 
+        else if (width == 0)
+        {
             widthError.innerHTML = "Must be larger than zero.";
             output.innerHTML = "";
-        } else{
+        } 
+        else
+        {
             widthError.innerHTML = "";
-        } if (front < 0 || isNaN(front)){
+        } 
+        if (front < 0 || isNaN(front))
+        {
             frontError.innerHTML = "Enter a positive number.";
             output.innerHTML = "";
         } else if (front == 0){
@@ -88,7 +103,9 @@ function checkValues(){
         } else{
             rightError.innerHTML = "";
         }
-    }else{
+    }
+    else
+    {
         lengthError.innerHTML = "";
         widthError.innerHTML = "";
         frontError.innerHTML = "";
@@ -97,11 +114,49 @@ function checkValues(){
         rightError.innerHTML = "";
         x = length + front + back;
         y = width + left + right;
-        if (length + width < 15){
+        if (length + width < 15)
+        {
             output.innerHTML = "Atleast one of your sides are too small for our liners.";
             output.style.color = "black";
-        }   else if (x <= 31 && y <= 34){
-            output.innerHTML = "The correct size is Large.<br> Click on the picture below to be taken to our Amazon store page!";
+        }
+        else if (length > 27)
+        {
+            output.innerHTML = "Your length is too large for any for our liners."
+            output.style.color = "black";
+        } 
+        else if (width > 26)
+        {
+            output.innerHTML = "Your width is too large for any for our liners."
+            output.style.color = "black";
+        } 
+        else if (front > 12)
+        {
+            output.innerHTML = "Your front side is too large for any for our liners."
+            output.style.color = "black";
+        } 
+        else if (left > 12)
+        {
+            output.innerHTML = "Your left side is too large for any for our liners."
+            output.style.color = "black";
+        } 
+        else if (back > 12)
+        {
+            output.innerHTML = "Your back side is too large for any for our liners."
+            output.style.color = "black";
+        } 
+        else if (right > 12)
+        {
+            output.innerHTML = "Your right side is too large for any for our liners."
+            output.style.color = "black";
+        } 
+        else if (x > 42 || y > 40.5)
+        {
+            output.innerHTML = "One of your sizes are too large for our liners."
+            output.style.color = "black";
+        }
+        else if (x <= 31 && y <= 34)
+        {
+            output.innerHTML = "The correct size is Large.<br> Click on the pictures below to be taken to our Amazon store page!";
             output.style.color = "rgb(95, 63, 63)";
             large.style.visibility = "visible";
             largeText.style.visibility = "visible";
@@ -121,10 +176,13 @@ function checkValues(){
             superJumbo.style.visibility = "hidden";
             superJumboText.style.visibility = "hidden";
             superJumboLink.removeAttribute("href");
-            if (length == 0 || width == 0 || front == 0 || left == 0 || back == 0 || right == 0){
+            if (length == 0 || width == 0 || front == 0 || left == 0 || back == 0 || right == 0)
+            {
                 output.innerHTML = "";
             }
-        } else if (x <= 37 && y <= 36){
+        } 
+        else if (x <= 37 && y <= 36)
+        {
             output.innerHTML = "The correct size is<br> Extra Giant or Jumbo.<br>Click on the pictures below to be taken to our Amazon store page!";
             output.style.color =  "rgb(21, 39, 56)";
             large.style.visibility = "hidden";
@@ -145,8 +203,10 @@ function checkValues(){
             superJumbo.style.visibility = "hidden";
             superJumboText.style.visibility = "hidden";
             superJumboLink.removeAttribute("href");
-        } else if (x <= 42 && y <= 40.5){
-            output.innerHTML = "The correct size is Super Jumbo.<br> Click on the picture below to be taken to our Amazon store page!";
+        } 
+        else if (x <= 42 && y <= 40.5)
+        {
+            output.innerHTML = "The correct size is Super Jumbo.<br> Click on the pictures below to be taken to our Amazon store page!";
             output.style.color = "darkgreen";
             large.style.visibility = "hidden";
             largeText.style.visibility = "hidden";
@@ -166,28 +226,7 @@ function checkValues(){
             superJumbo.style.visibility = "visible";
             superJumboText.style.visibility = "visible";
             superJumboLink.setAttribute("href", "https://www.amazon.com/Alfapet-Disposable-Liners-5-Pack-Extra-Giant-Super-Jumbo/dp/B0898MMYXJ/ref=sr_1_18?dchild=1&keywords=alfapet+cat+pan+liners&qid=1609792159&sr=8-18");
-        } else if (length > 27){
-            output.innerHTML = "Your length is too large for any for our liners."
-            output.style.color = "black";
-        } else if (width > 26){
-            output.innerHTML = "Your width is too large for any for our liners."
-            output.style.color = "black";
-        } else if (front > 12){
-            output.innerHTML = "Your front side is too large for any for our liners."
-            output.style.color = "black";
-        } else if (left > 12){
-            output.innerHTML = "Your left side is too large for any for our liners."
-            output.style.color = "black";
-        } else if (back > 12){
-            output.innerHTML = "Your back side is too large for any for our liners."
-            output.style.color = "black";
-        } else if (right > 12){
-            output.innerHTML = "Your right side is too large for any for our liners."
-            output.style.color = "black";
-        } else if (x > 42 || y > 40.5){
-            output.innerHTML = "One of your sizes are too large for our liners."
-            output.style.color = "black";
-	}
+        } 
     }
 }
 
