@@ -236,7 +236,7 @@ div {
   background-color: white;
   width: 270px;
   height: 98px;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 #output {
@@ -298,18 +298,11 @@ div {
   font-family: Brickman, Arial;
 }
 
-#coolcat{
-  width: 60px;
-  height: 60px;
-  margin-top: -1266px;
-  margin-left: 300px;
-}
-
 #videoBanner{
   height: 180px;
   width: 280px;
   margin-left: 700px;
-  margin-top: -317px;
+  margin-top: -250px;
   border: 1px solid black;
   padding: 10px;
   background-color: white;
