@@ -104,7 +104,7 @@ div {
 }
 
 #length {
-  margin-left: 52px;
+  margin-left: 66px;
   text-align: center;
   width: 60px;
 }
@@ -126,7 +126,7 @@ div {
 }
 
 #width {
-  margin-left: 60px;
+  margin-left: 66px;
   text-align: center;
   width: 60px;
 }
@@ -147,7 +147,7 @@ div {
 }
 
 #front{
-  width: 60px;
+  width: 66px;
   text-align: center;
   margin-left: 52px;
 }
@@ -169,7 +169,7 @@ div {
 }
 
 #left{
-  width: 60px;
+  width: 66px;
   text-align: center;
   margin-left: 60px;
 }
@@ -190,7 +190,7 @@ div {
 }
 
 #back{
-  width: 60px;
+  width: 66px;
   text-align: center;
   margin-left: 52px;
 }
@@ -212,7 +212,7 @@ div {
 }
 
 #right{
-  width: 60px;
+  width: 66x;
   text-align: center;
   margin-left: 60px;
 }
