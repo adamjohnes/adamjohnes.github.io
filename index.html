@@ -17,7 +17,7 @@ Developed by Adam Johnes-->
     <body>
         <header>
             <div id = "titleBox" class = "container">
-                <h1 id = "title"><b>CAT LITTERBOX LINER SIZE CALCULATOR</b></h1>
+                <h1 id = "title">CAT LITTERBOX LINER SIZE CALCULATOR</h1>
                     <a href = "https://www.alfapetco.com/">
                     <img src =  "Images/alfapet.png" alt = "alfapet" id = "alfapet">
                     </a>
@@ -26,32 +26,28 @@ Developed by Adam Johnes-->
         </header>
         <section>
             <div id = "description" class = "container">
-                <h1 id = "aboutTitle"><b>What Size Liner do I Use for my Litterbox?</b></h1>
+                <h1 id = "aboutTitle">About This Calculator</h1>
                 <img src =  "Images/calculator.jpg" alt = "calculator" id = "calculator">
-                <p id = "about">This calculator is the best way of determining what size liner you should use for your litterbox.<br>
-                    We take the dimensions of your litterbox and match the size of your litterbox with the appropriate AlfaPet liner. 
-                    To do this, you must enter your litterbox's <b>length</b>, <b>width</b>, and <b>heights</b> in inches. 
-                    Please use the pictures below for any questions you may have about properly measuring your litterbox.</p>
+                <p id = "about">This calculator takes the dimensions of your litterbox and matches the size of your litterbox with the appropriate Alfapet sized liner. To do this, you must enter your litterbox's <b>length</b>, <b>width</b>, and <b>heights</b> in inches. Please use the pictures below for any questions you may have about properly measuring your litterbox.</p>
             </div>
         </section>
             <div id = "main" class = "container">
                 <form id = "form" action = "/" method = "GET">
-                    <h1 id = "calcTop"> *All measurements must be in <b>INCHES</b></h1>
                     <h1 id = "linerCalculator">Cat Pan Liner Calculator</h1>
-                    <label id = "labelLength" for = "length">Length</label>
-                    <label id = "labelWidth" for = "width">Width</label>
+                    <label id = "labelLength" for = "length">Length(in)</label>
+                    <label id = "labelWidth" for = "width">Width(in)</label>
                     <input type = "text" placeholder = "length" id = "length" required>
                     <input type = "text" placeholder = "width" id = "width" required><br>
                     <p id = "lengthError"></p>
                     <p id = "widthError"></p>
-                    <label id = "labelFront" for = "front">Front</label>
-                    <label id = "labelLeft" for = "left">Left Side</label>
+                    <label id = "labelFront" for = "front">Front(in)</label>
+                    <label id = "labelLeft" for = "left">Left Side(in)</label>
                     <input type = "text" placeholder = "height" id = "front" required>
                     <input type = "text" placeholder = "height" id = "left" required><br>
                     <p id = "frontError"></p>
                     <p id = "leftError"></p>
-                    <label id = "labelBack" for = "back">Back</label>
-                    <label id = "labelRight" for = "right">Right Side</label>
+                    <label id = "labelBack" for = "back">Back(in)</label>
+                    <label id = "labelRight" for = "right">Right Side(in)</label>
                     <input type = "text" placeholder = "height" id = "back" required>
                     <input type = "text" placeholder = "height" id = "right" required><br>
                     <p id = "backError"></p>
