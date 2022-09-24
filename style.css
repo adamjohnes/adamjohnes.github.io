@@ -18,9 +18,11 @@ div {
 
 #title {
   font-size: 42px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin-left: 20px;
+  font-family: Copperplate, Helvetica, "Times New Roman";
+  color:black;
+  margin-left: 50px;
   margin-bottom: -10px;
+  padding: 6px;
 }
 
 #alfapet {
@@ -33,7 +35,7 @@ div {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 16px;
   margin-left: 20px;
-  margin-top: -70px;
+  margin-top: -80px;
 }
 
 #main {
@@ -54,16 +56,18 @@ div {
 #aboutTitle {
   font-size: 24px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  margin-left: 250px;
   margin-bottom: -10px;
+  margin-left: -24px;
+  color:rgb(11, 26, 41);
 }
 
 #about {
-  width: 625px;
-  margin-left: 27.5%;
+  width: 700px;
+  margin-left: 24.5%;
   background-color: white;
-  padding: 4px;
-  font-size: 13px;
+  padding: 2px;
+  font-size: 15px;
+  font-family: Copperplate, Helvetica, "Times New Roman"
 }
 
 #calculator {
@@ -86,27 +90,33 @@ div {
   margin-top: 10px;
 }
 
+#calcTop {
+  font-size: 12px;
+  text-align: center;
+  margin-top: -1px;
+}
+
 #linerCalculator {
   font-weight: bold;
   font-size: 16px;
-  margin-left: 48px;
-  margin-top: 20px;
-  width: 200px;
+  margin-left: 53px;
+  margin-top: -5px;
+  width: 190px;
   border: 2px solid rgb(56, 69, 82);
   background-color: rgb(198, 208, 216);
   text-align: center;
 }
 
 #labelLength {
-  margin-left: 45px;
-  font-size: 13px;
+  margin-left: 50px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 #length {
-  margin-left: 52px;
+  margin-left: 45px;
   text-align: center;
-  width: 60px;
+  width: 70px;
 }
 
 #lengthError{
@@ -120,15 +130,15 @@ div {
 }
 
 #labelWidth {
-  margin-left: 45px;
-  font-size: 13px;
+  margin-left: 70px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 #width {
   margin-left: 60px;
   text-align: center;
-  width: 60px;
+  width: 70px;
 }
 
 #widthError{
@@ -141,15 +151,15 @@ div {
 }
 
 #labelFront{
-  margin-left: 50px;
-  font-size: 13px;
+  margin-left: 55px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 #front{
-  width: 60px;
+  width: 70px;
   text-align: center;
-  margin-left: 52px;
+  margin-left: 45px;
 }
 
 #frontError{
@@ -163,13 +173,13 @@ div {
 }
 
 #labelLeft{
-  margin-left: 45px;
-  font-size: 13px;
+  margin-left: 65px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 #left{
-  width: 60px;
+  width: 70px;
   text-align: center;
   margin-left: 60px;
 }
@@ -184,15 +194,15 @@ div {
 }
 
 #labelBack{
-  margin-left: 51px;
-  font-size: 13px;
+  margin-left: 55px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 #back{
-  width: 60px;
+  width: 70px;
   text-align: center;
-  margin-left: 52px;
+  margin-left: 45px;
 }
 
 #backError{
@@ -206,13 +216,13 @@ div {
 }
 
 #labelRight{
-  margin-left: 48px;
-  font-size: 13px;
+  margin-left: 65px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 #right{
-  width: 60px;
+  width: 70px;
   text-align: center;
   margin-left: 60px;
 }
@@ -227,8 +237,7 @@ div {
 }
 
 #myBtn {
-  margin-top: 5px;
-  margin-left: 70px;
+  margin-left: 76px;
 }
 
 #outputBox {
@@ -249,7 +258,7 @@ div {
 }
 
 #reset {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 #box {
