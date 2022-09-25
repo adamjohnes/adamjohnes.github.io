@@ -8,4 +8,4 @@ The project is a proposed website that takes in the user's litterbox dimensions 
 How to use:
 Enter your litterbox dimensions, measuring the length, width and heights of all sides. Submit. The calculator will output a proper liner for your size, if one exists.
 
-![Screenshot](adamjohnes.github.io/blob/main/Images/website.png)
+![Screenshot]([adamjohnes.github.io/blob/main/Images/website.png](https://github.com/adamjohnes/adamjohnes.github.io/blob/main/Images/website.png))
