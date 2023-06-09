@@ -187,7 +187,7 @@ function checkValues()
                 output.innerHTML = "";
             }
         } 
-        else if (x <= 37 && y <= 36)
+        else if (x <= 38 && y <= 36)
         {
             output.innerHTML = "The correct size is<br> Extra Giant or Jumbo.<br>Click on the pictures below to be taken to our Amazon store page!";
             output.style.color =  "rgb(21, 39, 56)";
