@@ -38,6 +38,9 @@ function checkValues()
     superJumbo = document.getElementById("superJumbo");
     superJumboLink = document.getElementById("superJumboLink");
     superJumboText = document.getElementById("superJumboText");
+    walmart196 = document.getElementById("walmart196");
+    walmart196Link = document.getElementById("walmart196Link");
+    walmart196Text = document.getElementById("walmart196Text");
 
     if (length < 0 || length == 0 || isNaN(length) || width < 0 || width == 0 || isNaN(width) || front < 0 || front == 0 || isNaN(front) || left < 0 || left == 0 || isNaN(left) || back < 0 || back == 0 || isNaN(back) || right < 0 || right == 0 || isNaN(right))
     {
@@ -151,7 +154,7 @@ function checkValues()
         } 
         else if (x > 42 || y > 40.5)
         {
-            output.innerHTML = "One of your sizes are too large for our liners."
+            output.innerHTML = "At least one of your sizes is too large for our liners."
             output.style.color = "black";
         }
         else if (x <= 31 && y <= 34)
@@ -176,6 +179,9 @@ function checkValues()
             superJumbo.style.visibility = "hidden";
             superJumboText.style.visibility = "hidden";
             superJumboLink.removeAttribute("href");
+            walmart196.style.visibility = "hidden";
+            walmart196Text.style.visibility = "hidden";
+            walmart196Link.removeAttribute("href");
             if (length == 0 || width == 0 || front == 0 || left == 0 || back == 0 || right == 0)
             {
                 output.innerHTML = "";
@@ -203,6 +209,9 @@ function checkValues()
             superJumbo.style.visibility = "hidden";
             superJumboText.style.visibility = "hidden";
             superJumboLink.removeAttribute("href");
+            walmart196.style.visibility = "visible";
+            walmart196Text.style.visibility = "visible";
+            walmart196Link.setAttribute("href", "https://www.walmart.com/ip/Alfa-Pet-Sifting-Elastic-Cat-Pan-Liners/384544432?wmlspartner=wlpa&selectedSellerId=0&wl13=256&adid=22222222277384544432_117755028669_12420145346&wmlspartner=wmtlabs&wl0=&wl1=g&wl2=c&wl3=501107745824&wl4=pla-294505072980&wl5=9022290&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=384544432&wl13=256&veh=sem_LIA&gclid=EAIaIQobChMIi6XzzP-0_wIVDdXjBx0s4gWkEAQYASABEgKP8vD_BwE&gclsrc=aw.ds");
         } 
         else if (x <= 42 && y <= 40.5)
         {
@@ -226,6 +235,9 @@ function checkValues()
             superJumbo.style.visibility = "visible";
             superJumboText.style.visibility = "visible";
             superJumboLink.setAttribute("href", "https://www.amazon.com/Alfapet-Disposable-Liners-5-Pack-Extra-Giant-Super-Jumbo/dp/B0898MMYXJ/ref=sr_1_18?dchild=1&keywords=alfapet+cat+pan+liners&qid=1609792159&sr=8-18");
+            walmart196.style.visibility = "hidden";
+            walmart196Text.style.visibility = "hidden";
+            walmart196Link.removeAttribute("href");
         } 
     }
 }
@@ -257,10 +269,14 @@ function resetValues(){
     flatBottomText.style.visibility = "visible";
     superJumbo.style.visibility= "visible";
     superJumboText.style.visibility= "visible";
+    walmart196.style.visibility = "visible";
+    walmart196Text.style.visibility = "visible";
+    walmart196Link.removeAttribute("href");
     siftingLink.setAttribute("href", "https://www.amazon.com/Kitty-Cat-Alfa-Liners-Count/dp/B00IWUB36A/ref=sr_1_14?dchild=1&keywords=alfapet+kitty+cat+elastic+litter+box+liners&qid=1611768359&sr=8-14")
     jumboLink.setAttribute("href", "https://www.amazon.com/Alfapet-Sta-Put-Elastic-Sifting-Litter/dp/B00U1O9BAA/ref=sr_1_10?dchild=1&keywords=alfapet+kitty+cat+elastic+litter+box+liners&qid=1611768287&sr=8-10");
     flatBottomLink.setAttribute("href", "https://www.amazon.com/Alfapet-Drawstring-Disposal-Placement-Pan-Disposable/dp/B084G8GZHJ/ref=sr_1_25?dchild=1&keywords=alfapet+kitty+cat+elastic+litter+box+liners&qid=1611767423&sr=8-25");
     superJumboLink.setAttribute("href", "https://www.amazon.com/Alfapet-Disposable-Liners-5-Pack-Extra-Giant-Super-Jumbo/dp/B0898MMYXJ/ref=sr_1_18?dchild=1&keywords=alfapet+cat+pan+liners&qid=1609792159&sr=8-18");
     extraGiantLink.setAttribute("href", "https://www.amazon.com/Alfapet-Extra-giant-Elastic-Sta-put-Litter/dp/B016095M6G/ref=sr_1_15?dchild=1&keywords=cat+pan+liners+alfapet&qid=1610991048&sr=8-15");
     largeLink.setAttribute("href", "https://www.amazon.com/Alfapet-Disposable-12-count-Technology-Cleaners/dp/B084G86231/ref=sr_1_20?dchild=1&keywords=alfapet+cat+pan+liners&qid=1609794179&sr=8-20");
+    walmart196Link.setAttribute("href", "https://www.walmart.com/ip/Alfa-Pet-Sifting-Elastic-Cat-Pan-Liners/384544432?wmlspartner=wlpa&selectedSellerId=0&wl13=256&adid=22222222277384544432_117755028669_12420145346&wmlspartner=wmtlabs&wl0=&wl1=g&wl2=c&wl3=501107745824&wl4=pla-294505072980&wl5=9022290&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=384544432&wl13=256&veh=sem_LIA&gclid=EAIaIQobChMIi6XzzP-0_wIVDdXjBx0s4gWkEAQYASABEgKP8vD_BwE&gclsrc=aw.ds");
 }

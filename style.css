@@ -343,7 +343,7 @@ div {
   width: 120px;
   height: 185px;
   margin-left: 20px;
-  margin-top: 5px;
+  margin-top: -6px;
   padding: 3px;
   background-color: rgb(95, 63, 63);
   border: 2px solid maroon;
@@ -351,6 +351,7 @@ div {
 
 #largeText{
   width: 130px;
+  font-size: 12px;
   color: maroon;
   font-weight: bold;
   margin-left: 15px;
@@ -365,8 +366,8 @@ div {
 #extraGiant {
   width: 120px;
   height: 185px;
-  margin-top: 5px;
-  margin-left: 40px;
+  margin-top: -6px;
+  margin-left: 15px;
   padding: 3px;
   background-color: lightpink;
   border: 2px solid deeppink;
@@ -377,8 +378,8 @@ div {
   color: rgb(226, 76, 101);
   font-size: 12px;
   font-weight: bold;
-  margin-left: 336px;
-  margin-top: -30px;
+  margin-left: 286px;
+  margin-top: -47px;
   text-align: center;
 }
 
@@ -389,8 +390,8 @@ div {
 #flatBottom{
   width: 120px;
   height: 185px;
-  margin-top: 5px;
-  margin-left: 40px;
+  margin-top: -6px;
+  margin-left: 15px;
   padding: 3px;
   background-color: rgb(133, 98, 158);
   border: 2px solid purple;
@@ -400,8 +401,8 @@ div {
   width: 183px;
   color: rgb(104, 44, 101);
   font-size: 12px;
-  margin-left: 488px;
-  margin-top: -30px;
+  margin-left: 408px;
+  margin-top: -50px;
   font-weight: bold;
   text-align: center;
 }
@@ -413,8 +414,8 @@ div {
 #jumbo{
   width: 120px;
   height: 185px;
-  margin-top: 5px;
-  margin-left: 45px;
+  margin-top: -6px;
+  margin-left: 15px;
   padding: 3px;
   background-color: rgb(138, 179, 233);
   border: 2px solid rgb(87, 90, 253);
@@ -425,8 +426,8 @@ div {
   color: rgb(43, 41, 155);
   font-size: 12px;
   font-weight: bold;
-  margin-left: 654px;
-  margin-top: -30px;
+  margin-left: 549px;
+  margin-top: -46px;
   text-align: center;
 }
 
@@ -437,8 +438,8 @@ div {
 #sifting{
   width: 120px;
   height: 185px;
-  margin-top: 5px;
-  margin-left: 40px;
+  margin-top: -6px;
+  margin-left: 15px;
   padding: 3px;
   background-color: rgb(125, 142, 161);
   border: 2px solid rgb(21, 39, 56);
@@ -448,8 +449,8 @@ div {
   width: 183px;
   color: rgb(21, 39, 56);
   font-size: 12px;
-  margin-left: 821px;
-  margin-top: -30px;
+  margin-left: 690px;
+  margin-top: -49px;
   font-weight: bold;
   text-align: center;
 }
@@ -461,24 +462,46 @@ div {
 #superJumbo {
   width: 120px;
   height: 185px;
-  margin-top: 5px;
-  margin-left: 40px;
+  margin-top: -6px;
+  margin-left: 15px;
   padding: 3px;
   background-color: lightgreen;
   border: 2px solid green;
 }
 
 #superJumboText{
-  font-size: 13px;
+  font-size: 12px;
   width: 180px;
   color: darkgreen;
-  margin-left: 157px;
-  margin-top: -35px;
+  margin-left: 129px;
+  margin-top: -47px;
   font-weight: bold;
   text-align: center;
 }
 
 #superJumboLink{
+  text-decoration: none;
+}
+
+#walmart196{
+  width: 120px;
+  height: 185px;
+  margin-left: 15px;
+  margin-top: -6px;
+  border: 2px solid blue;
+}
+
+#walmart196Text{
+  width: 183px;
+  color: rgb(12, 57, 100);
+  font-size: 12px;
+  margin-left: 830px;
+  margin-top: -48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#walmart196Link{
   text-decoration: none;
 }
 
