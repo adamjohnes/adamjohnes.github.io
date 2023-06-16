@@ -132,27 +132,27 @@ function checkValues()
             output.innerHTML = "Your width is too large for any for our liners."
             output.style.color = "black";
         } 
-        else if (front > 12)
+        else if (front > 13)
         {
             output.innerHTML = "Your front side is too large for any for our liners."
             output.style.color = "black";
         } 
-        else if (left > 12)
+        else if (left > 13)
         {
             output.innerHTML = "Your left side is too large for any for our liners."
             output.style.color = "black";
         } 
-        else if (back > 12)
+        else if (back > 13)
         {
             output.innerHTML = "Your back side is too large for any for our liners."
             output.style.color = "black";
         } 
-        else if (right > 12)
+        else if (right > 13)
         {
             output.innerHTML = "Your right side is too large for any for our liners."
             output.style.color = "black";
         } 
-        else if (x > 42 || y > 40.5)
+        else if (x > 44 || y > 42)
         {
             output.innerHTML = "At least one of your sizes is too large for our liners."
             output.style.color = "black";
@@ -213,7 +213,7 @@ function checkValues()
             walmart196Text.style.visibility = "visible";
             walmart196Link.setAttribute("href", "https://www.walmart.com/ip/Alfa-Pet-Sifting-Elastic-Cat-Pan-Liners/384544432?wmlspartner=wlpa&selectedSellerId=0&wl13=256&adid=22222222277384544432_117755028669_12420145346&wmlspartner=wmtlabs&wl0=&wl1=g&wl2=c&wl3=501107745824&wl4=pla-294505072980&wl5=9022290&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=384544432&wl13=256&veh=sem_LIA&gclid=EAIaIQobChMIi6XzzP-0_wIVDdXjBx0s4gWkEAQYASABEgKP8vD_BwE&gclsrc=aw.ds");
         } 
-        else if (x <= 42 && y <= 40.5)
+        else if (x <= 44 && y <= 42)
         {
             output.innerHTML = "The correct size is Super Jumbo.<br> Click on the pictures below to be taken to our Amazon store page!";
             output.style.color = "darkgreen";
