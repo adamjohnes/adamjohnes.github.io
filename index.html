@@ -4,155 +4,56 @@
         <meta charset = "utf-8">
         <meta name = "viewport" content = "width = device-width, initial-scale=1.0">
         <meta name = "author" content = "Adam Johnes">
-        <title>Cat Pan Liner Calculator</title>
-        <meta name = "description" content = "An easy to use calculator that best fits litterboxes to the appropriate cat pan liner.">
-        <link rel = "stylesheet" href = "Styling/normalize.css">
-        <link rel = "stylesheet" href= "Styling/style.css">
-        <script type = "text/javascript" src = "Scripts/homeScript.js"></script>
+        <title>Adam Johnes' Portfolio</title>
+        <meta name = "description" content = "Adam Johnes' Portfolio">
+        <link rel = "stylesheet" href= "style.css">
+        <script type = "text/javascript" src = "homeScript.js"></script>
     </head>
-    <body>
-        <nav class = "topnavbar" id = "home page navbar">
-            <div class = "container" style = "min-height: 40px;">
-                <a class = "topnavbarbrand" href = "https://www.alfapetco.com">
-                    <img id = "brandImage" src = "Images/alfapet.AVIF" alt = "Image of brand">
-                </a>
-                <button class = "ribbon" id = "meetUs" lang = "en" onclick = "meetAlfapet();">Meet AlfaPet</button>
-                <button class = "ribbon" id = "ourLiners" lang = "en" onclick = "ourLiners();">Our Kitty Cat Pan Liners</button>
-                <button class = "ribbon" id = "contactUs" lang = "en" onclick = "contactUs()">Contact Us</button>
+    <body id = "backPage">
+        <div id = "container">
+            <div class = "row" id = "ribbon">
+                <div class="col-4" id="buttonBacks">
+                    <button type = "button" class = "widget" id = "toMyBackground" onclick = "toMyBackground();">More About Who I Am</button> 
+                </div>
+                <div class="col-4" id="buttonBacks">
+                    <button type = "button" class = "widget" id = "contactMe" onclick = "toContactMe();">Contact Me</button>
+                </div>
+                <div class="col-4" id="buttonBacks">
+                    <button type = "button" class = "widget" id = "myWork" onclick = "toProjects()">Some Projects I Have Created</button>
+                </div>
             </div>
-        </nav>
-        <main class = "container" id = "mainContainer">
-            <div class = "row" id = "firstRow">
-                <div class = "col-8" id = "firstLeft">
-                    <h1 id = "calculatorTitle" lang = "en">Cat Pan Liner Calculator</h1>
-                    <p id = "calcDesc" lang = "en">Use the cat pan liner calculator to effectively
-                        calculate the appropriate cat pan liner to fit your litterbox.
-                        Helpful information regarding how to measure your litterbox and
-                        our products is also provided.
-                    </p>
-                    <div class = "col-12" id = "divCalc">
-                        <form id = "calculator" method = "post">
-                            <div class = "col-5" id = "divLblLength">
-                                <label class = "lbl" id = "lblLength" for = "length" lang = "en">Length</label>
+            <div class = "content" id = "firstCont">
+                <div class = "row">
+                    <div id = "imageBody">
+                        <div class = "col-3">
+                            <div id = leftCon>
+                                <img id = "leftPic">
                             </div>
-                            <div class = "col-6" id = "divInputLength">
-                                <input type = "text" class = "textBox" id = "length" placeholder = "length (in)" required>
+                        </div>
+                        <div class = "col-6">
+                            <div id = "mainImg">
+                                <span class = "dot" id = "mainPicBg"><img src = "./Images/portfolio.png" id = "mainPic"></span>
                             </div>
-                            <div class = "col-3" id = "divPlaceHoldLeft">
-                                <img id = "measurements" src = "Images/measure_w.AVIF" alt = "depiction of measurements">
+                            <h1 id = "adamJohnes">Adam Johnes</h1>
+                            <p id = "resume"><a href = "./Docs/AdamJohnes_Resume.pdf">My Resume</a></p>
+                        </div>
+                        <div class = "col-3">
+                            <div id = "rightCon">
+                                <img id = "rightPic">
                             </div>
-                            <div class = "col-2" id = "divLblWidth">
-                                <label class = "lbl" id = "lblWidth" for = "width" lang = "en">Width</label>
-                            </div>
-                            <div class = "col-3" id = "divInputWidth">
-                                <input type = "text" class = "textBox" id = "width" placeholder = "width (in)" required>
-                            </div>
-                            <div class = "col-3" id = "divPlaceHoldRight">
-                                <img id = "calculatorImg" src = "Images/calculator.AVIF" alt = "image of a calculator">
-                            </div>
-                            <div class = "col-5" id = "divLblFront">
-                                <label class = "lbl" id = "lblFront" for = "front" lang = "en">Front</label>
-                            </div>
-                            <div class = "col-6" id = "divInputFront">
-                                <input type = "text" class = "textBox" id = "front" placeholder = "height (in)" required>
-                            </div>
-                            <div class = "col-5" id = "divLblBack">
-                                <label class = "lbl" id = "lblBack" for = "back" lang = "en">Back</label>
-                            </div>
-                            <div class = "col-6" id = "divInputBack">
-                                <input type = "text" class = "textBox" id = "back" placeholder = "height (in)" required>
-                            </div>
-                            <div class = "col-5" id = "divLblLeft">
-                                <label class = "lbl" id = "lblLeft" for = "left" lang = "en">Left</label>
-                            </div>
-                            <div class = "col-6" id = "divInputLeft">
-                                <input type = "text" class = "textBox" id = "left" placeholder = "height (in)" required>
-                            </div>
-                            <div class = "col-5" id = "divLblRight">
-                                <label class = "lbl" id = "lblRight" for = "right" lang = "en">Right</label>
-                            </div>
-                            <div class = "col-6" id = "divInputRight">
-                                <input type = "text" class = "textBox" id = "right" placeholder = "height (in)" required>
-                            </div>
-                            <div class = "col-6" id = "divSubmit">
-                                <button type = "button" class = "btn" id = "checkButton" onclick = "checkValues();">Submit</button>
-                            </div>
-                            <div class = "col-6" id = "divReset">
-                                <button type = "button" class = "btn" id = "resetButton" onclick = "resetValues();">Reset</button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
-                <div class = "col-4" id = "firstRight">
-                    <h1 id = "ourProducts">Our Products</h1>
-                    <div class = "col-4" id = "divLarge">
-                        <p lang = "en" class = "productText" id = "largeText">Large (Amazon)</p>
-                        <a id = "largeLink" href = "https://www.amazon.com/Alfapet-Disposable-12-count-Technology-Cleaners/dp/B084G86231/ref=sr_1_20?dchild=1&keywords=alfapet+cat+pan+liners&qid=1609794179&sr=8-20">
-                            <img id = "large" src = "Images/large.AVIF" alt = "image of large cat pan liner product">
-                        </a>
-                    </div>
-                    <div class = "col-4" id = "divExtraGiant">
-                        <p lang = "en" class = "productText" id = "extraGiantText">Extra-Giant (Amazon)</p>
-                        <a id = "extraGiantLink" href = "https://www.amazon.com/Alfapet-Extra-giant-Elastic-Sta-put-Litter/dp/B016095M6G/ref=sr_1_15?dchild=1&keywords=cat+pan+liners+alfapet&qid=1610991048&sr=8-15">
-                            <img id = "extraGiant" src = "Images/extraGiant.AVIF" alt = "image of extra giant cat pan liner product">
-                        </a>
-                    </div>
-                    <div class = "col-4" id = "divFlatBottom">
-                        <p lang = "en" class = "productText" id = "flatBottomText">Flat-Bottom (Amazon)</p>
-                        <a id = "flatBottomLink" href = "https://www.amazon.com/Alfapet-Drawstring-Disposal-Placement-Pan-Disposable/dp/B084G8GZHJ/ref=sr_1_25?dchild=1&keywords=alfapet+kitty+cat+elastic+litter+box+liners&qid=1611767423&sr=8-25">
-                            <img id = "flatBottom" src = "Images/flatBottom.AVIF" alt = "image of the flat-bottom cat pan liner product">
-                        </a>
-                    </div>
-                    <div class = "col-4" id = "divJumbo">
-                        <p lang = "en" class = "productText" id = "jumboText"><br>Jumbo Sifting (Amazon)</p>
-                        <a id = "jumboLink" href = "https://www.amazon.com/Alfapet-Sta-Put-Elastic-Sifting-Litter/dp/B00U1O9BAA/ref=sr_1_10?dchild=1&keywords=alfapet+kitty+cat+elastic+litter+box+liners&qid=1611768287&sr=8-10">
-                            <img id = "jumbo" src = "Images/jumbo.AVIF" alt = "image of the jumbo cat pan liner product">
-                        </a>
-                    </div>
-                    <div class = "col-4" id = "divWalmart">
-                        <p lang = "en" class = "productText" id = "walmartText"><br>Jumbo Sifting (Walmart)</p>
-                        <a id = "walmartLink" href = "https://www.walmart.com/ip/Alfa-Pet-Sifting-Elastic-Cat-Pan-Liners/384544432">
-                            <img id = "walmart" src = "Images/walmart.AVIF" alt = "image of the jumbo cat pan liner product">
-                        </a>
-                    </div>
-                    <div class = "col-4" id = "divSifting">
-                        <p lang = "en" class = "productText" id = "siftingText"><br>Extra-Giant Sifting (Amazon)</p>
-                        <a id = "siftingLink" href = "https://www.amazon.com/Kitty-Cat-Alfa-Liners-Count/dp/B00IWUB36A/ref=sr_1_14?dchild=1&keywords=alfapet+kitty+cat+elastic+litter+box+liners&qid=1611768359&sr=8-14">
-                            <img id = "sifting" src = "Images/sifting.AVIF" alt = "image of the sifting cat pan liner product">
-                        </a>
-                    </div>
-                    <div class = "col-4" id = "divSuperJumbo">
-                        <p lang = "en" class = "productText" id = "superJumboText"><br><br><br>Super Jumbo (Amazon)</p>
-                        <a id = "superJumboLink" href = "https://www.amazon.com/Alfapet-Disposable-Liners-5-Pack-Extra-Giant-Super-Jumbo/dp/B0898MMYXJ/ref=sr_1_18?dchild=1&keywords=alfapet+cat+pan+liners&qid=1609792159&sr=8-18">
-                            <img id = "superJumbo" src = "Images/superJumbo.AVIF" alt = "image of the super jumbo cat pan liner product">
-                        </a>
+                <div class = "row" id = "bgAbMe">
+                    <div class = "col-12">
+                            <h1 id = "welcome"><i>Welcome!</i></h1>
+                            <p id = "aboutMeText"><br>
+                                I went to school to be a physical therapist<br> 
+                                and came out as a software developer. <br>Learn more about me and my story.
+                            </p>
                     </div>
                 </div>
             </div>
-            <div class = "row" id = "secondRow">
-                <div class = "col-8" id = "secondLeft">
-                    <div class = "col-3" id = "divOutputLeft">
-                        <a id = "imgOutputLeftLink"><img id = "imgOutputLeft"></a>
-                    </div>
-                    <div class = "col-6" id = "divOutputBox">
-                        <p id = "outputText"></p>
-                    </div>
-                    <div class = "col-3" id = "divOutputRight">
-                        <a id = "imgOutputRightLink"><img id = "imgOutputRight"></a>
-                    </div>
-                </div>
-                <div class = "col-4" id = "secondRight"></div>
-            </div>
-        </main>
-        <footer id = "footer">
-            <div class = "row" id = "rowFooter">
-                <div class = "col-8" id = "divBottom">
-                    <p lang = "en" id = "companyInfo">AlfaPet Inc. | 7319 Ingham Ln,
-                        Godfrey, IL 62035 | 1-800-236-PETS (7387) | Copyright &COPY; 2023
-                        AlfaPet Inc.
-                    </p>
-                </div>
-            </div>
-        </footer>
+        </div>
     </body>
 </html>
