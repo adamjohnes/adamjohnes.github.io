@@ -71,73 +71,41 @@ function matchLitterbox(length, width, front, back, left, right, buttonPress)
 
     if (length <= 5 || width <= 5)
     {
-        if (!buttonPress)
-        {
-            return;
-        }
         outputText.innerHTML = "Your litterbox is too small for our liners, please check your length and width measurements";
         return;
     }
     if (length > 27)
     {
-        if (!buttonPress)
-        {
-            return;
-        }
         outputText.innerHTML = "Your length is too large for any of our liners";
         return;
     }
     if (width > 26)
     {
-        if (!buttonPress)
-        {
-            return;
-        }
         outputText.innerHTML = "Your width is too large for any of our liners";
         return;
     }
     if (front > 13)
     {
-        if (!buttonPress)
-        {
-            return;
-        }
         outputText.innerHTML = "Your front side is too tall for any of our liners";
         return;
     }
     if (back > 13)
     {
-        if (!buttonPress)
-        {
-            return;
-        }
         outputText.innerHTML = "Your back side is too tall for any of our liners";
         return;
     }
     if (left > 13)
     {
-        if (!buttonPress)
-        {
-            return;
-        }
         outputText.innerHTML = "Your left side is too tall for any of our liners";
         return;
     }
     if (right > 13)
     {
-        if (!buttonPress)
-        {
-            return;
-        }
         outputText.innerHTML = "Your right side is too tall for any of our liners";
         return;
     }
     if (x > 44 || y > 42)
     {
-        if (!buttonPress)
-        {
-            return;
-        }
         outputText.innerHTML = "At least one of your sides is too large for any of our liners";
         return;
     }
