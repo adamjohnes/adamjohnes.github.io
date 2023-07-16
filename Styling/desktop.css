@@ -1,0 +1,396 @@
+/* CSS */
+/* Desktop */
+
+* {box-sizing: border-box;}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float:left;
+    height:100%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+h1 {
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+}
+
+p {
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+}
+
+label {
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+}
+
+button {
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+}
+
+span {
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+}
+
+#rowNav {
+    background-color: rgb(220, 155, 25);
+    padding:20px;
+}
+
+#leftNav {
+    background-color: white;
+    border:2px solid black;
+    border-right:transparent;
+    height:12vh;
+    min-height:60px;
+    text-align: center;
+}
+
+.divCenterImg {
+    text-align:center;
+}
+
+#brandImage {
+    padding:5px;
+    width:50%;
+    max-width:425px;
+    height:12vh;
+    min-height:65px;
+}
+
+#ourLiners {
+    font-size:22px;
+}
+
+#rightNav {
+    background-color: white;
+    border:2px solid black;
+    border-left:transparent;
+    height:12vh;
+    min-height:60px;
+}
+
+.ribbon {
+    float:left;
+    height:90%;
+    width:30%;
+    color:rgb(220, 155, 25);
+    background-color:rgb(255, 255, 255);
+    font-family: Arial;
+    font-size:28px;
+    font-weight:500;
+    text-align:center;
+    padding:0px;
+    border:transparent;
+    margin-top:.45%;
+}
+
+.ribbon:hover {
+    background-color: rgb(220, 155, 25);
+    color:rgb(255, 255, 255);
+}
+
+#mainContainer {
+    width:80%;
+    transform:translate(10vw);
+}
+
+#firstLeft {
+    min-width:700px;
+    min-height:1600px;
+}
+
+#firstRight {
+    width:24vw;
+    margin-left:2vw;
+}
+
+#calculatorTitle {
+    text-align:center;
+    font-size:42px;
+    color:rgb(220, 155, 25);
+}
+
+#calcDesc {
+    text-align:center;
+    font-size:20px;
+    min-height:130px;
+    max-height:130px;
+    padding:20px;
+}
+
+#rowCalc {
+    min-height:850px;
+}
+
+#divCalc {
+    background-color: rgba(235, 235, 215, 0.75);
+    border: 5px solid rgb(235, 235, 215);
+}
+
+#divMeasurements {
+    text-align:center;
+}
+
+#measurements {
+    height:90vh;
+    width:60vw;
+    max-height:400px;
+    max-width:600px;
+    border-radius:20%;
+    padding:20px;
+}
+
+.lbl {
+    text-align:right;
+    transform:translate(-1vw);
+    display:block;
+    font-size:28px;
+    margin-bottom:2vh;
+    margin-top:2vh;
+}
+
+.textBox {
+    margin-top:2vh;
+    height:5vh;
+    min-height:45px;
+    width:5vw;
+    font-size:14px;
+    text-align:center;
+}
+
+#divBtnBottom {
+    height:17.5vh;
+    text-align: center;
+}
+
+.btn {
+    padding:0px;
+    height:7vh;
+    max-height:50px;
+    max-width:200px;
+    width:8vw;
+    font-size:24px;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    margin-top:6vh;
+    line-height:4vh;
+    border-radius:20%;
+}
+
+.btn:hover {
+    background-color: rgb(220, 155, 25);
+    color:white;
+}
+
+#ourProducts {
+    text-align:center;
+    font-size:42px;
+    color:rgb(220, 155, 25);
+}
+
+#fillerRow {
+    min-height:150px;
+    max-height:150px;
+}
+
+#divLarge {
+    padding:10px;
+    min-height:299px;
+    max-height:299px;
+}
+
+#divExtraGiant {
+    padding:10px;
+    min-height:299px;
+    max-height:299px;
+}
+
+#divFlatBottom {
+    padding:10px;
+    min-height:299px;
+    max-height:299px;
+}
+
+#divJumbo {
+    padding:10px;
+    min-height:299px;
+    max-height:299px;
+}
+
+#divWalmart {
+    padding:10px;
+    min-height:299px;
+    max-height:299px;
+}
+
+#divSifting {
+    padding:10px;
+    min-height:299px;
+    max-height:299px;
+}
+
+#divSuperJumbo {
+    padding:10px;
+    min-height:299px;
+    max-height:299px;
+}
+
+.productText {
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    max-height:46px;
+    min-height:46px;
+}
+
+.sellers {
+    font-size:65%;
+}
+
+.productImg {
+    width:80%;
+    height:9.025vw;
+    max-height:170px;
+    max-width:175px;
+}
+
+#largeText {
+    color:purple;
+    font-size:23px;
+    margin-bottom:4.25vh;
+    max-height:50px;
+}
+
+#large:hover {
+    box-shadow: 0px 0px 25px rgb(235, 125, 235);
+}
+
+#extraGiantText {
+    color:rgb(248, 121, 142);
+    font-size:23px;
+    margin-bottom:4.25vh;
+    max-height:50px;
+}
+
+#extraGiant:hover {
+    box-shadow: 0px 0px 25px rgb(248, 121, 142);
+}
+
+#flatBottomText {
+    color:rgb(208, 131, 208);
+    font-size:23px;
+    margin-bottom:4.25vh;
+    max-height:50px;
+}
+
+#flatBottom:hover {
+    box-shadow: 0px 0px 25px rgb(208, 131, 208);
+}
+
+#jumboText {
+    color:rgb(88, 190, 254);
+    font-size:23px;
+    margin-bottom:4.25vh;
+    max-height:50px;
+}
+
+#jumbo:hover {
+    box-shadow: 0px 0px 25px lightskyblue;
+}
+
+#walmartText {
+    color:rgb(0, 157, 255);
+    font-size:23px;
+    margin-bottom:4.25vh;
+    max-height:50px;
+}
+
+#walmart:hover {
+    box-shadow: 0px 0px 25px rgb(0, 157, 255);
+}
+
+#siftingText {
+    color:rgb(2, 72, 116);
+    font-size:23px;
+    margin-bottom:4.25vh;
+    max-height:50px;
+}
+
+#sifting:hover {
+    box-shadow: 0px 0px 25px rgb(0, 28, 45);
+}
+
+#superJumboText {
+    color:rgb(13, 176, 13);
+    font-size:23px;
+    margin-bottom:4.25vh;
+    max-height:50px;
+}
+
+#superJumbo:hover {
+    box-shadow: 0px 0px 25px rgb(8, 104, 21);
+}
+
+#centerImg {
+    text-align: center;
+}
+
+#outputRow {
+    height:20vh;
+    margin-bottom:1vh;
+}
+
+#divOutputBox {
+    border:2px solid rgba(220, 155, 25, .25);
+    background-color: rgba(220, 155, 25, 0.025);
+}
+
+#outputText {
+    font-size:24px;
+    text-align:center;
+    padding:5px;
+}
+
+.outputImg {
+    width:18vw;
+    height:45vh;
+    padding:10px;
+    max-width:145px;
+    max-height:320px;
+}
+
+.outputImg:hover {
+    box-shadow: 0px 0px 25px rgb(250, 250, 136);
+}
+
+#divOutputImgRow {
+    height:40vh;
+}
+
+footer {
+    background-color: rgb(220, 155, 25);
+}
+
+#companyInfo {
+    text-align:center;
+    font-size:24px;
+    color:white;
+    padding:5px;
+    font-weight:bold;
+}
