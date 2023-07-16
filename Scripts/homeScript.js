@@ -74,12 +74,7 @@ function matchLitterbox(length, width, front, back, left, right, buttonPress)
     imgLeftInner.style.visibility = "hidden";
     imgRightInner.style.visibility = "hidden";
     imgRightMiddle.style.visibility = "hidden";
-    
-    if (length <= 5 || width <= 5)
-    {
-        outputText.innerHTML = "Your litterbox is too small for our liners, please check your length and width measurements";
-        return;
-    }
+
     if (length > 27)
     {
         outputText.innerHTML = "Your length is too large for any of our liners";
