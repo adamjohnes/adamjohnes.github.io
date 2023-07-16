@@ -142,16 +142,28 @@ function matchLitterbox(length, width, front, back, left, right, buttonPress)
         return;
     }
 
-    if (window.innerWidth <= 625 && buttonPress == true)
+    if (window.innerWidth <= 625)
     {
+        if (!buttonPress)
+        {
+            return;
+        }
         window.scrollTo({top: 1650, behavior: "smooth"});
     }
-    else if (window.innerWidth <= 1350 && buttonPress == true)
+    else if (window.innerWidth <= 1350)
     {
+        if (!buttonPress)
+        {
+            return;
+        }
         window.scrollTo({top: 1350, behavior: "smooth"});
     }
     else 
     {
+        if (!buttonPress)
+        {
+            return;
+        }
         window.scrollTo({top: 1000, behavior: "smooth"});
     }
 
