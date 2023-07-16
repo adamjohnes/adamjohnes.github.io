@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function() 
 {
-    resetValues();
+    resetValues(true);
 });
 
 window.addEventListener('resize', fixImages);
@@ -341,7 +341,7 @@ function contactUs ()
     window.location = "https://www.alfapetco.com/contact-us/";
 }
 
-function resetValues ()
+function resetValues (justLoaded = false)
 {
     document.getElementById("length").value = null;
     document.getElementById("width").value = null;
@@ -358,13 +358,16 @@ function resetValues ()
 
     outputText.innerHTML = null;
 
-    if (window.innerWidth <= 625)
+    if (!justLoaded)
     {
-        window.scrollTo({top: 785, behavior: "smooth"});
-    }
-    else if (window.innerWidth <= 1050)
-    {
-        window.scrollTo({top: 715, behavior: "smooth"});
+        if (window.innerWidth <= 625)
+        {
+            window.scrollTo({top: 785, behavior: "smooth"});    
+        }   
+        else if (window.innerWidth <= 1050)   
+        {
+            window.scrollTo({top: 715, behavior: "smooth"});  
+        }
     }
 }
 
