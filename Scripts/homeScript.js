@@ -69,6 +69,11 @@ function matchLitterbox(length, width, front, back, left, right, buttonPress)
     var x = length + front + back;
     var y = width + left + right;
 
+    if (x == 0)
+    {
+        return;
+    }
+    
     imgLeftOuter.style.visibility = "hidden";
     imgLeftMiddle.style.visibility = "hidden";
     imgLeftInner.style.visibility = "hidden";
